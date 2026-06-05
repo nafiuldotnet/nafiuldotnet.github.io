@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nafiul Chowdhury - Full Stack Developer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Basic SEO -->
+
+
+<meta name="title" content="Nafiul Chowdhury - Full Stack Develope">
+<meta name="description" content="Full Stack Developer with hands-on experience in Laravel, ASP.NET Core, React, and multi-tenant SaaS architecture. Skilled in developing scalable business solutions including POS systems, inventory management, subscription platforms, and REST APIs. Passionate about building performance-focused and user-centric web applications with clean architecture and practical business logic.">
+<meta name="keywords" content="nafiul chowdhury, nafiul, chowdhury, full stack developer, laravel developer, asp.net core developer, react developer, php developer, c# developer, software engineer, web developer, software developer, nafiuldotnet, nafiul.net, nafiulchowdhury.com, nafiulchowdhury">
+<meta name="author" content="Nafiul Chowdhury">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Open Graph / Facebook / WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nafiuldotnet.github.io/">
+<meta property="og:title" content="Nafiul Chowdhury - Full Stack Developer">
+<meta property="og:description" content="Full Stack Developer with hands-on experience in Laravel, ASP.NET Core, React, and multi-tenant SaaS architecture.">
+<meta property="og:image" content="./assets/img/cover.png">
+
+<!-- Optional but recommended -->
+<meta property="og:site_name" content="Nafiul Chowdhury Portfolio">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://nafiuldotnet.github.io/">
+<meta name="twitter:title" content="Nafiul Chowdhury - Full Stack Developer">
+<meta name="twitter:description" content="Full Stack Developer with hands-on experience in Laravel, ASP.NET Core, React, and multi-tenant SaaS architecture.">
+<meta name="twitter:image" content="./assets/img/cover.png">
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+<!-- <script src="https://cdn.ckeditor.com/ckeditor5/46.0.2/classic/ckeditor.js"></script> -->
+ <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="./assets/js/jquery.ripples.js"></script>
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="w3-black">
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="myHidden" id="myMobileNavbar">
+  <!-- <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small"> -->
+    <a href="javascript:void(0)" class="" onclick="myShow('#home', '.homeLink')">
+      <i class="fas fa-home"></i>
+    </a>
+    <a href="javascript:void(0)" class="" onclick="myShow('#about', '.aboutLink')">
+      <i class="fas fa-user"></i>
+    </a>
+    <a href="javascript:void(0)" class="" onclick="myShow('#projects', '.projectsLink')">
+      <i class="fas fa-briefcase"></i>
+    </a>
+    <a href="javascript:void(0)" class="" onclick="myShow('#contact', '.contactLink')">
+      <i class="fas fa-envelope"></i>
+    </a>
+  <!-- </div> -->
+</div>
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <a href="./" class="link">
+    <img src="./assets/img/nafiProNew.jpg" style="width:100%; max-height: 120px;" alt="Avatar">
+  </a>
+  
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-large homeLink w3-black" onclick="myShow('#home', '.homeLink')">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-large aboutLink" onclick="myShow('#about', '.aboutLink')">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-large projectsLink" onclick="myShow('#projects', '.projectsLink')">
+    <i class="fa fa-briefcase w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-large contactLink" onclick="myShow('#contact', '.contactLink')">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+
+  
+  <div class="socialicons">
+    <a href="https://fb.me/nafiuldotnet/" target="_blank" class="sociallink">
+        <i class="fab fa-facebook w3-hover-opacity"></i>
+    </a>
+
+    <a href="https://linkedin.com/in/nafiuldotnet/" target="_blank" class="sociallink">
+        <i class="fab fa-linkedin w3-hover-opacity"></i>
+    </a>
+
+    <a href="https://github.com/nafiuldotnet" target="_blank" class="sociallink">
+        <i class="fab fa-github  w3-hover-opacity"></i>
+    </a>
+    
+    
+  </div>
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container  w3-center w3-black mySection" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Nafiul Chowdhury.</h1>
+    <p>Full Stack Developer.</p>
+    <!-- <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108"> -->
+    <div class="buttons">
+        <a href="./assets/cv.pdf" download="NafiulChowdhury_FullStackDev_CV.pdf" class="btn" target="_blank">
+            <i class="fas fa-download"></i>
+            Download CV
+        </a>
+        <a href="./resume/"  class="btn" target="_blank">
+            <i class="fas fa-eye"></i>
+            View Resume
+        </a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64 mySection myHidden" id="about">
+    <h2 class="w3-text-light-grey">MD. NAFI-UL-ISLAM CHOWDHURYH</h2>
+    <hr style="width:300px; margin-bottom: 10px;" class="w3-opacity">
+    <p>
+        Full Stack Developer with hands-on experience in Laravel, ASP.NET Core,
+        React, and multi-tenant SaaS architecture. Skilled in developing scalable
+        business solutions including POS systems, inventory management, subscription
+        platforms, and REST APIs. Passionate about building performance-focused and
+        user-centric web applications with clean architecture and practical business
+        logic.
+
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Backend Development</p>
+    <div class="skills">
+      <div class="skillBox w3-center">
+        <img src="./assets/img/php.png" alt="">
+        <p><b>PHP</b></p>
+      </div>
+      
+      <div class="skillBox w3-center">
+        <img src="./assets/img/Laravel.png" alt="">
+        <p><b>Laravel</b></p>
+      </div>
+      <div class="skillBox w3-center">
+        <img src="./assets/img/c-sharp.png" alt="">
+        <p><b>C#</b></p>
+      </div>
+      <div class="skillBox w3-center">
+        <img src="./assets/img/NET-core.png" alt="">
+        <p><b>.NET Core</b></p>
+      </div>
+    </div>
+    <p class="w3-wide">Frontend Development</p>
+    <div class="skills">
+      <div class="skillBox w3-center">
+        <img src="./assets/img/JavaScript.png" alt="">
+        <p><b>JavaScript</b></p>
+      </div>
+      <div class="skillBox w3-center">
+        <img src="./assets/img/Alpine.js.png" alt="">
+        <p><b>Alpine.js</b></p>
+      </div>
+      <div class="skillBox w3-center">
+        <img src="./assets/img/react.png" alt="">
+        <p><b>React</b></p>
+      </div>
+      <div class="skillBox w3-center">
+        <img src="./assets/img/Tailwind%20CSS.png" alt="">
+        <p><b>Tailwind CSS</b></p>
+      </div>
+    </div>
+    <p class="w3-wide">Database Management</p>
+    <div class="skills">
+      <div class="skillBox w3-center">
+        <img src="./assets/img/MySQL.png" alt="">
+        <p><b>MySQL</b></p>
+      </div>
+      <div class="skillBox w3-center">
+        <img src="./assets/img/SQL%20Developer.png" alt="">
+        <p><b>SQL Server</b></p>
+      </div>
+      <div class="skillBox w3-center">
+        <img src="./assets/img/Oracle.png" alt="">
+        <p><b>Oracle</b></p>
+      </div>
+    </div>
+    
+    
+
+    
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
+    <div class="w3-row testimonyBox">
+        <img src="./assets/img/Pavel.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Pavel Hassan.</span> MD of Seba24 Habiganj.</p>
+        <p>The best developer I've ever worked with. Saved our time and money.</p>
+    </div>
+    
+    <div class="w3-row testimonyBox">
+        <img src="./assets/img/ambaganHeadTeacher.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Abu Sadek.</span> Head Teacher at Ambagan Govt. High School.</p>
+        <p>Working with him was a great experience. His attention to detail and problem-solving skills are exceptional.</p><br>
+    </div>
+    
+   
+
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content mySection myHidden" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/sailboat.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+        <img src="/w3images/chef.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/p6.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+
+  <!-- Projects Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey mySection myHidden " id="projects">
+    <h2 class="w3-text-light-grey">Top Projects</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-row prjectBox p-3">
+        <div class="w3-col m4 w3-margin-bottom p-4">
+            <div class="projectImg">
+              <img src="./assets/img/MiniCom_Logo.png" alt="POS System">
+            </div>
+            
+            <h3>MiniCom - CoD Solution</h3>
+            <p class="mb-4">
+              Developed a Multi-tenant SaaS E-Commerce platform using Laravel, enabling businesses to manage sales, inventory, and customer data. Implemented features like real-time reporting, multi-store support, and seamless integration with Meta Pixel and other external services, resulting in improved operational efficiency for sellers and consumers.
+            </p>
+            <a href="https://minicom.nicsoftit.com/" target="_blank" class="btn m-2">View Project</a>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom p-4">
+            <div class="projectImg">
+              <img src="./assets/img/Seba24BD_Logo.png" alt="Subscription Platform" >
+            </div>
+            <h3>Seba24BD - E-commerce Platform</h3>
+            <p class="mb-4">
+              Built solutions for Seba24BD, a leading e-commerce platform, including a POS system and inventory management application using Laravel. Developed a REST API for seamless integration with third-party services and implemented features like real-time inventory tracking, order management, and customer analytics, enhancing the overall user experience and operational efficiency.
+            </p>
+            <a href="https://seba24bd.com/" target="_blank" class="btn m-2">View Project</a>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom p-4">
+            <div class="projectImg">
+              <img src="./assets/img/HP_Logo.png" alt="Subscription Platform">
+            </div>
+            <h3>Habiganj Pourashava</h3>
+            <p class="mb-4">
+              Developed a comprehensive website for Habiganj Pourashava using WordPress, providing a user-friendly interface for residents to access municipal services, news, and updates. Implemented responsive design to enhance community engagement and streamline communication between the municipality and its citizens.
+            </p>
+            <a href="https://habiganjpourashava.gov.bd/" target="_blank" class="btn m-2">View Project</a>
+        </div>
+    </div>
+  </div>
+  <!-- End of Projects Section  -->
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey mySection myHidden " id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fas fa-map fa-fw w3-text-white w3-large w3-margin-right"></i> Address: North Kazipara, Mirpur, Dhaka</p>
+      <p><i class="fas fa-phone fa-fw w3-text-white w3-large w3-margin-right"></i> Phone: +8801756702946</p>
+      <p><i class="fas fa-envelope fa-fw w3-text-white w3-large w3-margin-right"> </i> Email: nafiulchowdhury.com@mail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form  target="_blank" id="contactForm">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="subject"></p>
+      <p><textarea id="message" class="w3-input w3-padding-16" type="text" placeholder="Message" required name="message"></textarea></p>
+      <p style="margin:20px 0;">
+        <button class="w3-button btn w3-padding-large" type="submit">
+          <i class="fas fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+    <!-- <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        <i class="fab fa-facebook w3-hover-opacity"></i>
+        <i class="fab fa-instagram w3-hover-opacity"></i>
+        <i class="fab fa-snapchat w3-hover-opacity"></i>
+        <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fab fa-twitter w3-hover-opacity"></i>
+        <i class="fab fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    
+    </footer> -->
+    <!-- End footer -->
+
+<!-- END PAGE CONTENT -->
+</div>
+
+
+
+
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>
